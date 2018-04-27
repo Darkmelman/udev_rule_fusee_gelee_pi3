@@ -14,7 +14,10 @@ fi
 cat <<EOF > /etc/udev/rules.d/100-switch.rules
 ####################################################################################
 # change idVendor and idProduct
-ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="09a4"
+# lsusb gives for example ID 0424:ec00
+# the string befoe the : is the idVendor and after the : idProduct
+#
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0424", ATTR{idProduct}=="ec00"
 , RUN+="/home/pi/fusee.sh"
 #####################################################################################
 EOF
