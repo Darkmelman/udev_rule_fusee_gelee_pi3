@@ -20,6 +20,8 @@ cat <<EOF > /etc/udev/rules.d/100-switch.rules
 ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0955", ATTR{idProduct}=="7321", RUN+="/home/pi/fusee.sh"
 EOF
 
+sudo udevadm control --reload-rules
+
 sudo service udev restart
 
 #tail -f /var/log/syslog
