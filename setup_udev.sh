@@ -7,6 +7,7 @@ echo "Creating fusee.sh"
 cat <<EOF > /home/pi/fusee.sh
 #!/bin/bash
 sleep 3
+cd /home/pi/fusee-launcher
 sudo python3 /home/pi/fusee-launcher/fusee-launcher.py fusee.bin
 EOF
 sudo chmod +x /home/pi/fusee.sh
