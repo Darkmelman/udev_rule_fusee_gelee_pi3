@@ -1,6 +1,13 @@
-# udev_rule_fusee_gelee_pi3
+# udev_rule_fusee_gelee_raspberry
 This scrip creates a script file to run fusee gelee after connecting the switch in RCM mode to a Raspberry Pi 3
 
+BIG UPDATE:
+
+Itś also working on a raspberry pi zero w with patched linux kernel!
+
+Instructions to patch and compile the kernel will follow as soon as possible!
+
+#########################################################################################
 
 Setup Steps on Pi3:
 
